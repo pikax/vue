@@ -8,8 +8,8 @@ var ref = require('chalk');
 var red = ref.red;
 var yellow = ref.yellow;
 var prefix = "[vue-server-renderer-webpack-plugin]";
-var warn = (exports.warn = function (msg) { return console.error(red((prefix + " " + msg + "\n"))); });
-var tip = (exports.tip = function (msg) { return console.log(yellow((prefix + " " + msg + "\n"))); });
+(exports.warn = function (msg) { return console.error(red((prefix + " " + msg + "\n"))); });
+(exports.tip = function (msg) { return console.log(yellow((prefix + " " + msg + "\n"))); });
 var onEmit = function (compiler, name, hook) {
     if (compiler.hooks) {
         // Webpack >= 4.0.0
